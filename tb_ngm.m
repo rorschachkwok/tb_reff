@@ -65,23 +65,6 @@ R21 = eig(M12)
 
 
 
-%F_latex = latex(F)
-%V_latex = latex(V)
-%JF_latex = latex(JF)
-%JV_latex = latex(JV)
-%invJV_latex = latex(invJV)
-
-%Mat_latex = latex(Mat)
-
-%% 
-% v11 = latex(invJV(1,1))
-
-%R11 = latex(R11)
-%R22 = latex(R22)
-%R12 = latex(R12)
-%R21 = latex(R21)
-
-
 %% step8：import parameters
 kappa = 0.2;
 m = 0.25;
@@ -102,7 +85,7 @@ f_2 = 0.01847;
 
 B = readmatrix("tb_beta.xlsx",Sheet="jilin"); % Sheet can be changed
 b = B(i, 2:end); 
-% year = B(i, 1);
+
 beta_11 = b(1);
 beta_12 = b(2);
 beta_22 = b(3);
@@ -133,6 +116,6 @@ for i = 1:size(B,1)
 end 
  
 %% step9：
-R0 = eval(R11(end))
+% R0 = eval(R11(end))
 
 
